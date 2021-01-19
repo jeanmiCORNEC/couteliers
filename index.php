@@ -46,7 +46,20 @@ if (!empty($_GET['login_err'])) {
     }
 }
 ?>
-
+<div class="main_index">
+    <div class="main_title"><h1>Référencement Couteliers</h1>
+    </div>
+    <div class="main_presentation">
+        <div class="main_presentation_title">
+            <h2>Pourquoi ce site ?</h2>
+        </div>
+        <div class="main_presentation_content">
+        <p>Fan de couteaux, j'ai récemment fait une reconversion dans le développement Web.</p>
+        <p>J'ai décidé de créer ce site, pour donner de la visibilité a nos chers couteliers.</p>
+        <p>L'inscription est requise afin d'accéder à la carte des couteliers.</p>
+        </div>
+    </div>
+</div>
 <?php
 require __DIR__.'/inc/footer.php';
 ?>

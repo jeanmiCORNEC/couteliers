@@ -28,7 +28,8 @@
                 <li class="navbar_list_item">La carte</li>
                 <li class="navbar_list_item">Connexion</li>
                 <li class="navbar_list_item">Inscription</li>
-                <li class="navbar_list_item">Profil</li>
+                <!--<li class="navbar_list_item">Déconnexion</li>-->
+                <!--<li class="navbar_list_item">Profil</li>-->
             </ul>
         </div>
         <div class="navbar_button"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></div>  
