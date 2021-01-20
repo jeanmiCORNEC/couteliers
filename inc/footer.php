@@ -15,7 +15,12 @@ if (!isset($_COOKIE['accepte-cookie'])) {
 <?php
 }
 ?>
-
+<div class="footer_social">
+    <a href="https://www.facebook.com/hippocampecoutellerie"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a href="https://github.com/jeanmiCORNEC?tab=repositories"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/jeanmichelcornec/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+    <a href="mailto:referencementcouteliers@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+</div>
 </footer>    
 <!-- leaflet -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""></script>

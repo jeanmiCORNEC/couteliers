@@ -3,7 +3,7 @@ html {
   box-sizing: border-box;
   font-size: 18px;
   height: 100vh;
-  font-family: "Merienda", cursive;
+  font-family: "Frank Ruhl Libre", serif;
 }
 * {
   color: white;
@@ -102,7 +102,7 @@ footer {
   }
   .fa-bars {
     display: block;
-    margin-left: 40vw;
+    margin-left: 50vw;
   }
 
   /* main */
@@ -114,6 +114,23 @@ footer {
   }
   .main_presentation_content p {
     margin: 4vh 3vw;
+  }
+
+  /* footer*/
+  .footer_social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+  }
+  .footer_social a {
+    display: flex;
+  }
+  .logo {
+    height: 4.5vh;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-left: 5vw;
   }
 
   /* banner */
