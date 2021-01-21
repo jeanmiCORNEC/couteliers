@@ -83,6 +83,19 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.footer_social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+.footer_social a {
+  display: flex;
+}
+.logo {
+  border-radius: 50%;
+  display: inline-flex;
+}
 
 /* screen < 480px */
 @media screen and (max-width: 480px) {
@@ -110,26 +123,15 @@ footer {
     margin-top: 5vh;
   }
   .main_presentation_title {
-    margin: 4vh 0 0;
+    margin-top: 4vh;
   }
   .main_presentation_content p {
     margin: 4vh 3vw;
   }
 
   /* footer*/
-  .footer_social {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-  }
-  .footer_social a {
-    display: flex;
-  }
   .logo {
     height: 4.5vh;
-    border-radius: 50%;
-    display: inline-flex;
     margin-left: 5vw;
   }
 
@@ -156,28 +158,39 @@ footer {
   }
 }
 
-/* screen < 768px */
-@media screen and (max-width: 768px) {
-  /* general */
-
+/* screen >481px & < 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
   /* header */
   .navbar_home {
     width: 20%;
   }
+  .navbar_list {
+    width: 80%;
+  }
   .navbar_list_item {
-    margin-left: 5vw;
+    margin-left: 10vw;
   }
 
   /* main */
-  .main_index {
-    flex-direction: column;
+  .main_title {
+    margin: 4vh;
+  }
+  .main_presentation_title {
+    margin-bottom: 4vh;
+  }
+  .main_presentation_content {
+    margin-top: 4vh;
+  }
+  .main_presentation_content p {
+    margin-bottom: 2vh;
+  }
+  .main_presentation_content p:last-child {
+    margin-top: 6vh;
   }
 }
 
-/* screen < 1024px */
-@media screen and (max-width: 1024px) {
-  /* general */
-
+/* screen >768 and < 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   /* header */
   .navbar_home {
     width: 20%;
@@ -185,17 +198,49 @@ footer {
   .navbar_list_item {
     margin-left: 10vw;
   }
+
+  /* main */
+  .main_title {
+    margin-top: 7vh;
+  }
+  .main_presentation_title {
+    margin: 5vh 0;
+  }
+  .main_presentation_content p {
+    margin: 3vh 3vw;
+  }
 }
 
 /* screen > 1024px */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   /* general */
   html {
     font-size: 20px;
   }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 
   /* header */
   .navbar_list_item {
-    margin-left: 15vw;
+    margin-left: 10vw;
+  }
+
+  /* main */
+  .main_title {
+    margin-top: 7vh;
+  }
+  .main_presentation_title {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+  .main_presentation_content p {
+    margin-bottom: 5vh;
+  }
+  .main_presentation_content p:last-child {
+    margin-top: 8vh;
   }
 }

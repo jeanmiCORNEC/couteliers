@@ -25,11 +25,11 @@
        <div class="navbar_home"><a href="index.php">Accueil</a></div>
         <div class="navbar_list">
             <ul>
-                <li class="navbar_list_item">La carte</li>
-                <li class="navbar_list_item">Connexion</li>
-                <li class="navbar_list_item">Inscription</li>
-                <!--<li class="navbar_list_item">Déconnexion</li>-->
-                <!--<li class="navbar_list_item">Profil</li>-->
+                <li class="navbar_list_item"><a href="#">La carte</a></li>
+                <li class="navbar_list_item"><a href="#">Connexion</a></li>
+                <li class="navbar_list_item"><a href="#">Inscription</a></li>
+                <!--<li class="navbar_list_item"><a href="#">Déconnexion</a></li>-->
+                <!--<li class="navbar_list_item"><a href="#">Profil</a></li>-->
             </ul>
         </div>
         <div class="navbar_button"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></div>  
