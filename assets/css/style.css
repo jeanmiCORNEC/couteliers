@@ -17,7 +17,11 @@ h2 {
 a {
   text-decoration: none;
 }
-
+.button {
+  background-color: black;
+  border: 1px solid #4282b7;
+  font-weight: 700;
+}
 /* header & footer*/
 header,
 footer {
@@ -47,7 +51,7 @@ footer {
   display: none;
 }
 
-/* main */
+/* main page index.php */
 main {
   height: 69.6vh;
   background: linear-gradient(to left, rgb(0, 0, 0), rgb(87, 93, 110));
@@ -77,6 +81,24 @@ main {
   text-align: center;
 }
 
+/* main page connexion.php */
+.connexion,
+.lost_password {
+  display: flex;
+  flex-direction: column;
+}
+.connexion_title,
+.connexion_form,
+.connexion_form_button,
+.lost_password_form {
+  display: flex;
+  justify-content: center;
+}
+.lost_password_title,
+.lost_password_button {
+  display: flex;
+  justify-content: center;
+}
 /* footer */
 footer {
   display: flex;
@@ -95,6 +117,27 @@ footer {
 .logo {
   border-radius: 50%;
   display: inline-flex;
+}
+
+/* banner */
+.banner {
+  width: 100vw;
+  background-color: black;
+  border: 1px solid #4282b7;
+}
+.text_banner {
+  font-size: 0.7rem;
+  padding: 2px;
+  text-align: center;
+}
+.button_banner {
+  text-align: center;
+  padding: 3px;
+  border: 1px solid white;
+  width: 65%;
+  margin-left: 15vw;
+  margin-bottom: 1vh;
+  background-color: #4282b7;
 }
 
 /* screen < 480px */
@@ -118,7 +161,7 @@ footer {
     margin-left: 50vw;
   }
 
-  /* main */
+  /* main page index.php */
   .main_title {
     margin-top: 5vh;
   }
@@ -129,32 +172,35 @@ footer {
     margin: 4vh 3vw;
   }
 
+  /* main page connexion.php */
+  .connexion_title {
+    margin: 5vh 0;
+  }
+  .connexion_form_email,
+  .connexion_form_password,
+  .lost_password_form_email {
+    display: flex;
+    justify-content: space-between;
+  }
+  .connexion_form label {
+    margin-right: 3vw;
+  }
+  .connexion_form div,
+  .lost_password_form div {
+    margin-bottom: 3vh;
+  }
+
+  .lost_password_title {
+    margin: 8vh 0 5vh 0;
+  }
+  .lost_password_form label {
+    margin-right: 16vw;
+  }
+
   /* footer*/
   .logo {
     height: 4.5vh;
     margin-left: 5vw;
-  }
-
-  /* banner */
-  .banner {
-    width: 95%;
-    background-color: black;
-    margin-left: 2vw;
-    border: 1px solid #4282b7;
-  }
-  .text_banner {
-    font-size: 0.7rem;
-    padding: 2px;
-    text-align: center;
-  }
-  .button_banner {
-    text-align: center;
-    padding: 3px;
-    border: 1px solid white;
-    width: 65%;
-    margin-left: 15vw;
-    margin-bottom: 1vh;
-    background-color: #4282b7;
   }
 }
 
@@ -171,7 +217,7 @@ footer {
     margin-left: 10vw;
   }
 
-  /* main */
+  /* main  page index.php */
   .main_title {
     margin: 4vh;
   }
@@ -187,9 +233,34 @@ footer {
   .main_presentation_content p:last-child {
     margin-top: 6vh;
   }
+
+  /* main page connexion.php */
+  .connexion_title {
+    margin: 3vh 0;
+  }
+  .lost_password_title {
+    margin-bottom: 2vh;
+  }
+  .connexion_form_email,
+  .connexion_form_password {
+    display: flex;
+    justify-content: space-between;
+  }
+  .connexion_form label {
+    margin-right: 3vw;
+  }
+  .connexion_form div {
+    margin-bottom: 3vh;
+  }
+  .lost_password_form_email,
+  .lost_password_form_email label,
+  .lost_password_button {
+    display: inline-flex;
+    margin-right: 3vw;
+  }
 }
 
-/* screen >768 and < 1023px */
+/* screen >768px and < 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* header */
   .navbar_home {
@@ -199,7 +270,7 @@ footer {
     margin-left: 10vw;
   }
 
-  /* main */
+  /* main page index.php */
   .main_title {
     margin-top: 7vh;
   }
@@ -209,9 +280,19 @@ footer {
   .main_presentation_content p {
     margin: 3vh 3vw;
   }
+
+  /* main page connexion.php */
+  .connexion_title,
+  .lost_password_title {
+    margin: 3vh 0;
+  }
+  .connexion_form div,
+  .lost_password_form_email {
+    margin-bottom: 3vh;
+  }
 }
 
-/* screen > 1024px */
+/* screen => 1024px */
 @media screen and (min-width: 1024px) {
   /* general */
   html {
@@ -229,7 +310,7 @@ footer {
     margin-left: 10vw;
   }
 
-  /* main */
+  /* main page index.php */
   .main_title {
     margin-top: 7vh;
   }
@@ -242,5 +323,15 @@ footer {
   }
   .main_presentation_content p:last-child {
     margin-top: 8vh;
+  }
+
+  /* main page connexion.php */
+  .connexion_title,
+  .lost_password_title {
+    margin: 5vh;
+  }
+  .connexion_form div,
+  .lost_password_form_email {
+    margin-bottom: 3vh;
   }
 }

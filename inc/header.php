@@ -26,7 +26,7 @@
         <div class="navbar_list">
             <ul>
                 <li class="navbar_list_item"><a href="#">La carte</a></li>
-                <li class="navbar_list_item"><a href="#">Connexion</a></li>
+                <li class="navbar_list_item"><a href="connexion.php">Connexion</a></li>
                 <li class="navbar_list_item"><a href="#">Inscription</a></li>
                 <!--<li class="navbar_list_item"><a href="#">Déconnexion</a></li>-->
                 <!--<li class="navbar_list_item"><a href="#">Profil</a></li>-->

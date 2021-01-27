@@ -1,6 +1,4 @@
 </main>
-<footer>
-
 <?php
 if (!isset($_COOKIE['accepte-cookie'])) {
     ?>
@@ -15,6 +13,7 @@ if (!isset($_COOKIE['accepte-cookie'])) {
 <?php
 }
 ?>
+<footer>
 <div class="footer_social">
     <a href="https://www.facebook.com/hippocampecoutellerie"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
     <a href="https://github.com/jeanmiCORNEC?tab=repositories"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
