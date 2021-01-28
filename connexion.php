@@ -37,7 +37,7 @@ if (!empty($_GET['inf'])) {
                 <label for="password" class="col-sm-4">Mot de passe</label>
                 <input id="password" type="password" name="password" placeholder="Mot de passe" required="required">
             </div>
-            <div>
+            <div class="remember">
                 <input type="checkbox" name="remember" id="check">
                 <label for="check">Se souvenir de moi </label>
             </div>
