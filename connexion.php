@@ -23,9 +23,9 @@ if (!empty($_GET['inf'])) {
 }
 } ?>
 
-<div class="connexion">
+<section class="connexion">
     <div class="connexion_title">
-        <h2>Connexion</h2>
+        <h1>Connexion</h1>
     </div>
     <div class="connexion_form">
         <form action="connexion_traitement.php" method="post">
@@ -42,15 +42,15 @@ if (!empty($_GET['inf'])) {
                 <label for="check">Se souvenir de moi </label>
             </div>
             <div class="connexion_form_button">
-                <button type="submit" class="button">Connecter</button>
+                <button type="submit" class="button">Valider</button>
             </div>
         </form>
     </div>
-</div>
+</section>
 
-<div class="lost_password">
+<section class="lost_password">
     <div class="lost_password_title">
-        <h2>Mot de passe oublié</h2>
+        <h1>Mot de passe oublié</h1>
     </div>
     <div class="lost_password_form">
         <form action="forgot.php" method="POST">
@@ -63,7 +63,7 @@ if (!empty($_GET['inf'])) {
             </div>
         </form>
     </div>
-</div>
+</section>
 
 
 <?php

@@ -58,43 +58,43 @@ $_SESSION['token'] = $token;
 $_SESSION['token_time'] = time();
 
 ?>
-<div>
-    <div>
-        Inscription
+<section class="inscription">
+    <div class="inscription_title">
+        <h1>Inscription</h1>
     </div>
-    <div>
+    <div class="inscription_form">
         <form action="inscription_traitement.php" method="post">
-            <div>
+            <div class="inscription_form_group">
                 <label for="pseudo">Pseudo</label>
                 <input  type="text" name="pseudo" required="required" placeholder="Pseudo">
             </div>
-            <div>
+            <div class="inscription_form_group">
                 <label for="email">Email</label>
                 <input  type="email" name="email" required="required" placeholder="Email">
             </div>
-            <div>
-                <label for="password" >Mot de passe</label>
+            <div class="inscription_form_group">
+                <label for="password">Mot de passe</label>
                 <input type="password" name="password" required="required" placeholder="Mot de passe">
             </div>
-            <div>
-                <label for="password_retype" >Vérification du mot de passe</label>
+            <div class="inscription_form_group password_retype">
+                <label for="password_retype">Vérification du mot de passe</label>
                 <input  type="password" name="password_retype" required="required" placeholder="Vérification du mot de passe">
             </div>
-            <div>
-                <label for="status" >Quel est votre rapport à la coutellerie ?</label>
-                <select name="status" >
+            <div class="inscription_form_group inscription_form_select">
+                <label for="status">Quel est votre rapport aux lames ?</label>
+                <select name="status">
                     <option value="fan">Amateur de belles lames</option>
                     <option value="amateur">Coutelier amateur/hobbyiste</option>
                     <option value="pro">Coutelier Professionnel/artisan</option>
                 </select>
             </div>
-            <input type="hidden" name="token" value="<?php echo $token; ?>" />
-            <div>
-                <button type="submit">Inscription</button>
+            <input type="hidden" name="token" value="<?php echo $token; ?>"/>
+            <div class="inscription_form_button">
+                <button type="submit" class="button">Valider</button>
             </div>
         </form>
     </div>
-</div>
+</section>
 
 <?php
 require('inc/footer.php');

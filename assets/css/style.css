@@ -94,6 +94,29 @@ form {
   display: flex;
   justify-content: center;
 }
+
+/* main page inscription.php */
+.inscription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inscription_title {
+  justify-content: center;
+}
+.inscription_form,
+.inscription_title,
+.inscription_form_group {
+  display: flex;
+}
+.inscription_form_select select,
+.inscription_form_select option {
+  color: #333;
+}
+.inscription_form_button {
+  display: flex;
+  justify-content: center;
+}
 /* footer */
 footer,
 .footer_social {
@@ -131,8 +154,8 @@ footer {
   background-color: #4282b7;
 }
 
-/* screen < 480px */
-@media screen and (max-width: 480px) {
+/* screen =< 320px */
+@media screen and (max-width: 320px) {
   /* general */
   h1 {
     font-size: 1.3rem;
@@ -149,7 +172,7 @@ footer {
   }
   .fa-bars {
     display: block;
-    margin-left: 50vw;
+    margin-left: 48vw;
   }
 
   /* main page index.php */
@@ -171,23 +194,150 @@ footer {
   .connexion_form_password,
   .lost_password_form_email {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 5vw;
   }
-  .remember {
-    margin-left: 10vw;
+  .connexion_form_password label {
+    padding: 0 2vh 0 0;
+  }
+  .connexion_form_password input {
+    height: 1rem;
+    margin-top: 0.25rem;
   }
   .connexion_form div,
   .lost_password_form div {
     margin-bottom: 3vh;
   }
-
+  .remember,
+  .remember label {
+    padding-left: 4vw;
+  }
   .lost_password_title {
-    margin: 8vh 0 5vh 0;
+    margin: 5vh 0;
+  }
+
+  /* main page inscription.php */
+  .inscription_title {
+    margin: 2vh 0;
+  }
+  .inscription_form,
+  .inscription_form_group {
+    justify-content: space-between;
+    margin-bottom: 3vh;
+    align-items: center;
+    padding: 0 4vw;
+  }
+  .inscription_form_group input {
+    margin-left: 2vw;
+  }
+  .inscription_form_button {
+    margin-top: 6vh;
+  }
+  .password_retype,
+  .inscription_form_select {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .password_retype label,
+  .inscription_form_select label {
+    margin-bottom: 3vh;
+  }
+}
+
+/* screen > 320px & < 480px */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* general */
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  /* header */
+  .navbar_list {
+    display: none;
+  }
+  .navbar_home {
+    padding-left: 10vw;
+  }
+  .fa-bars {
+    display: block;
+    margin-left: 50vw;
+  }
+
+  /* main page index.php */
+  .main_title {
+    margin-top: 7vh;
+  }
+  .main_presentation_title {
+    margin: 4vh 0;
+  }
+  .main_presentation_content p {
+    margin: 4vh 3vw;
+  }
+
+  /* main page connexion.php */
+  .connexion_title {
+    margin: 5vh 0;
+  }
+  .connexion_form_email,
+  .connexion_form_password,
+  .lost_password_form_email {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+  .connexion_form div,
+  .lost_password_form div {
+    margin-bottom: 3vh;
+  }
+  .connexion_form_button button,
+  .lost_password_button button {
+    margin-top: 3vh;
+  }
+  .remember,
+  .remember label {
+    padding-left: 4vw;
+  }
+  .lost_password_title {
+    margin: 5vh 0;
+  }
+
+  /* main page inscription.php */
+  .inscription_title {
+    margin: 5vh 0 3vh 0;
+  }
+  .inscription_form,
+  .inscription_form_group {
+    justify-content: space-between;
+  }
+  .inscription_form_group {
+    padding: 0 5vw;
+    margin: 3vh 0;
+  }
+  .inscription_form_group input {
+    height: 1rem;
+  }
+  .inscription_form_button {
+    margin-top: 5vh;
+  }
+  .password_retype,
+  .inscription_form_select {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .inscription_form_select label,
+  .password_retype label {
+    margin: 2vh 0 3vh 0;
   }
 }
 
 /* screen >481px & < 767px */
 @media screen and (min-width: 481px) and (max-width: 767px) {
+  /* general */
+  html {
+    font-size: 16px;
+  }
   /* header */
   .navbar_home {
     width: 30%;
@@ -220,32 +370,63 @@ footer {
   .connexion_title {
     margin: 3vh 0;
   }
-  .lost_password_title {
-    margin-bottom: 2vh;
-  }
   .connexion_form_email,
   .connexion_form_password {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 20vw;
   }
   .connexion_form div {
     margin-bottom: 3vh;
   }
   .remember {
-    margin-left: 20vw;
+    padding-left: 19.5vw;
+  }
+  .remember label {
+    padding-left: 4vw;
+  }
+  .lost_password_title {
+    margin-bottom: 2vh;
+  }
+  .lost_password_form {
+    display: flex;
   }
   .lost_password_form_email,
-  .lost_password_button {
-    display: inline-flex;
-  }
-  .lost_password_form_email {
-    margin: 2vh 0 0 20vw;
-  }
+  .lost_password_button,
   .lost_password_form_email label {
-    margin-right: 5vw;
+    display: inline-flex;
+    padding: 0 5vw;
   }
-  .lost_password_button {
-    margin-left: 5vw;
+  .lost_password_form {
+    padding-left: 10vw;
+  }
+
+  /* main page inscription.php */
+  .inscription_title {
+    margin: 2vh 0;
+  }
+  .inscription_form,
+  .inscription_form_group {
+    justify-content: space-between;
+  }
+  .inscription_form_group {
+    padding: 0 15vw;
+    margin: 3vh 0;
+  }
+  .inscription_form_group input {
+    height: 1rem;
+  }
+  .password_retype {
+    padding: 0 7vw;
+  }
+  .inscription_form_select {
+    padding: 0 7.5vw;
+  }
+  .password_retype input {
+    margin-right: 3vw;
+  }
+  .inscription_form_button {
+    margin-top: 3vh;
   }
 }
 /* screen >768px and < 1023px */
@@ -275,13 +456,17 @@ footer {
   .connexion_form_email,
   .connexion_form_password {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 20vw;
   }
   .connexion_form div {
     margin-bottom: 3vh;
   }
   .remember {
-    margin-left: 20vw;
+    padding-left: 19.5vw;
+  }
+  .remember label {
+    padding-left: 4vw;
   }
   .lost_password_form_email,
   .lost_password_button {
@@ -295,6 +480,34 @@ footer {
   }
   .lost_password_button {
     margin-left: 5vw;
+  }
+
+  /* main page inscription.php */
+  .inscription_title {
+    margin: 2vh 0;
+  }
+  .inscription_form,
+  .inscription_form_group {
+    justify-content: space-between;
+  }
+  .inscription_form_group {
+    padding: 0 15vw;
+    margin: 3vh 0;
+  }
+  .inscription_form_group input {
+    height: 1rem;
+  }
+  .password_retype {
+    padding: 0 7vw;
+  }
+  .inscription_form_select {
+    padding: 0 7.5vw;
+  }
+  .password_retype input {
+    margin-right: 3vw;
+  }
+  .inscription_form_button {
+    margin-top: 3vh;
   }
 }
 
@@ -337,23 +550,50 @@ footer {
     margin: 5vh 0;
   }
   .connexion_form_email,
-  .connexion_form_password {
+  .connexion_form_password,
+  .lost_password_form_email {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 30vw;
   }
   .connexion_form div {
     margin-bottom: 3vh;
   }
   .remember {
-    margin-left: 28vw;
+    padding-left: 30vw;
   }
-  .lost_password_form_email {
-    margin: 5vh 0 3vh 27vw;
-  }
-  .lost_password_form_email label {
-    margin-right: 5vw;
+  .remember label {
+    padding-left: 2vw;
   }
   .lost_password_button {
     margin-top: 5vh;
+  }
+
+  /* main page inscription.php */
+  .inscription_title {
+    margin: 5vh 0 3vh 0;
+  }
+  .inscription_form,
+  .inscription_form_group {
+    justify-content: space-between;
+  }
+  .inscription_form_group {
+    padding: 0 15vw;
+    margin: 5vh 0;
+  }
+  .inscription_form_group input {
+    height: 1rem;
+  }
+  .password_retype {
+    padding: 0 7vw 0 9vw;
+  }
+  .inscription_form_select {
+    padding: 0 9vw;
+  }
+  .password_retype input {
+    margin-right: 3vw;
+  }
+  .inscription_form_button {
+    margin-top: 3vh;
   }
 }
